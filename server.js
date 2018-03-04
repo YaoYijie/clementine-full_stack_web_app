@@ -7,7 +7,7 @@ var app = express();
 
 mongo.connect('mongodb://localhost:27017/clementinjs', function(err, client) {
   var db = client.db('clementinjs');
-  
+
   if (err) {
     throw new Error('Database failed to connect.\n' + err);
   }else {
@@ -28,4 +28,4 @@ mongo.connect('mongodb://localhost:27017/clementinjs', function(err, client) {
     console.log('Listening on port 3000...');
   });
 
-})
+});
